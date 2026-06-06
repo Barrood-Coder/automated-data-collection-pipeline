@@ -1,5 +1,8 @@
 # Stealth Data Pipeline
 
+LinkedIn:
+https://www.linkedin.com/in/yourprofile
+
 A Python-based data collection pipeline designed to extract structured data from dynamic, JavaScript-rendered websites.
 
 The project demonstrates advanced web scraping, data processing, and automation techniques for collecting large volumes of structured data from websites that rely heavily on asynchronous content loading.
