@@ -1,15 +1,56 @@
-# stealth-data-pipeline
-# Resilient Stealth Web Scraper for Dynamic Financial & Sports Tables
+# Stealth Data Pipeline
 
-A production-grade Python script designed to harvest data from heavily protected, dynamic, and asynchronous Javascript-rendered websites without getting blocked. 
+A Python-based data collection pipeline designed to extract structured data from dynamic, JavaScript-rendered websites.
 
-## 🚀 Key Architectural Features
-- **Anti-Bot Obfuscation**: Injects Custom Chrome Experimental Options and modifies `navigator.webdriver` via Chrome DevTools Protocol (CDP) to bypass Cloudflare/Akamai fingerprints.
-- **High-Performance Memory Traversal**: Replaced traditional high-latency single-element DOM lookups with single-batch table queries, boosting execution throughput by up to 400%.
-- **Robust Exception Recovery**: Implements a structured retry-and-refresh circuit breaker inside an explicit `WebDriverWait` loop to handle lazy-loading objects and data stream hiccups gracefully.
-- **Data Engineering Ready**: Seamlessly cleans and structures dynamic nested tables into production-ready `pandas.DataFrame` objects for instant quantitative analysis or database ingestion.
+The project demonstrates advanced web scraping, data processing, and automation techniques for collecting large volumes of structured data from websites that rely heavily on asynchronous content loading.
 
-## 🛠️ Tech Stack
-- Python 3.10+
-- Selenium Webdriver (Headless Mode)
-- Pandas (Data Engineering / ETL)
+## Project Overview
+
+This pipeline was developed to automate the collection of horse racing and sports-related data from dynamic web sources.
+
+Key objectives:
+
+* Automate repetitive data collection tasks
+* Extract structured information from JavaScript-rendered pages
+* Handle dynamic content loading reliably
+* Transform raw website data into analysis-ready datasets
+* Prepare data for further analytics or database storage
+
+## Key Features
+
+### Stealth Browser Automation
+
+Utilizes Selenium-based browser automation with anti-detection techniques to improve reliability when interacting with protected websites.
+
+### Dynamic Content Extraction
+
+Handles JavaScript-rendered tables, lazy-loaded content, and asynchronous page updates.
+
+### Data Cleaning & Structuring
+
+Converts extracted data into structured pandas DataFrames suitable for analysis, reporting, or ETL workflows.
+
+### Error Recovery & Stability
+
+Implements retry mechanisms and exception handling to improve robustness during long-running scraping sessions.
+
+### Analytics-Ready Output
+
+Produces clean datasets that can be exported to CSV files or integrated into downstream database pipelines.
+
+## Technology Stack
+
+* Python
+* Selenium
+* Pandas
+* Chrome WebDriver
+
+## Skills Demonstrated
+
+* Web Scraping
+* Browser Automation
+* Data Collection
+* Data Processing
+* ETL Concepts
+* Error Handling
+* Python Development
