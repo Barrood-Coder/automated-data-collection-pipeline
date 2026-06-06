@@ -1,7 +1,7 @@
 # Stealth Data Pipeline
 
 LinkedIn:
-https://www.linkedin.com/in/yourprofile
+https://www.linkedin.com/in/barry-lo-82aa5692
 
 A Python-based data collection pipeline designed to extract structured data from dynamic, JavaScript-rendered websites.
 
