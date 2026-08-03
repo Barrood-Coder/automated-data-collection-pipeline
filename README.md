@@ -1,59 +1,89 @@
-# Stealth Data Pipeline
+# Resilient Data Collection & ETL Pipeline
 
-LinkedIn:
-https://www.linkedin.com/in/barry-lo-82aa5692
+A Python-based data pipeline designed to collect, transform, and structure data from dynamic web sources into analysis-ready datasets.
 
-A Python-based data collection pipeline designed to extract structured data from dynamic, JavaScript-rendered websites.
+This project demonstrates practical experience in web automation, data extraction, ETL workflows, and building reliable data collection systems.
 
-The project demonstrates advanced web scraping, data processing, and automation techniques for collecting large volumes of structured data from websites that rely heavily on asynchronous content loading.
+---
 
 ## Project Overview
 
-This pipeline was developed to automate the collection of horse racing and sports-related data from dynamic web sources.
+Many websites contain valuable information that is difficult to collect manually due to dynamic content loading and complex page structures.
+
+This project was developed to automate the process of collecting structured data from dynamic websites and transforming raw information into clean datasets for analysis, reporting, and downstream applications.
 
 Key objectives:
 
-* Automate repetitive data collection tasks
-* Extract structured information from JavaScript-rendered pages
-* Handle dynamic content loading reliably
-* Transform raw website data into analysis-ready datasets
-* Prepare data for further analytics or database storage
+* Automate repetitive data collection workflows
+* Extract structured information from dynamic websites
+* Transform raw data into analysis-ready formats
+* Build reusable and reliable ETL workflows
+
+---
+
+## Pipeline Architecture
+
+```mermaid
+flowchart LR
+    A[Dynamic Websites] --> B[Data Collection Layer]
+    B --> C[Python Processing Pipeline]
+    C --> D[Pandas Data Transformation]
+    D --> E[Structured Dataset]
+    E --> F[CSV / Database / Analytics]
+```
+
+---
 
 ## Key Features
 
-### Stealth Browser Automation
+### Dynamic Data Collection
 
-Utilizes Selenium-based browser automation with anti-detection techniques to improve reliability when interacting with protected websites.
+Developed automated collection workflows for JavaScript-rendered websites using Python-based automation and data extraction techniques.
 
-### Dynamic Content Extraction
+### Data Processing & Transformation
 
-Handles JavaScript-rendered tables, lazy-loaded content, and asynchronous page updates.
+Cleaned, normalized, and transformed raw extracted information into structured pandas DataFrames.
 
-### Data Cleaning & Structuring
+### Reliable Automation Workflow
 
-Converts extracted data into structured pandas DataFrames suitable for analysis, reporting, or ETL workflows.
-
-### Error Recovery & Stability
-
-Implements retry mechanisms and exception handling to improve robustness during long-running scraping sessions.
+Implemented error handling and recovery mechanisms to improve stability during repeated data collection tasks.
 
 ### Analytics-Ready Output
 
-Produces clean datasets that can be exported to CSV files or integrated into downstream database pipelines.
+Generated structured datasets suitable for reporting, analysis, and database storage.
+
+---
+
+## Example Output
+
+### Structured JSON Data
+
+(Add screenshot)
+
+### Processed Dataset
+
+(Add Pandas DataFrame screenshot)
+
+---
 
 ## Technology Stack
 
 * Python
 * Selenium
 * Pandas
-* Chrome WebDriver
+* Requests
+* BeautifulSoup
+* GraphQL
+* SQLite
+
+---
 
 ## Skills Demonstrated
 
 * Web Scraping
-* Browser Automation
-* Data Collection
-* Data Processing
-* ETL Concepts
-* Error Handling
+* Data Extraction
+* ETL Pipeline Development
+* Data Cleaning
+* Automation
 * Python Development
+* API Integration
