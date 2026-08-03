@@ -58,11 +58,11 @@ Generated structured datasets suitable for reporting, analysis, and database sto
 
 ### Structured JSON Data
 
-(Add screenshot)
+![JSON_data](JSON_data.png)
 
 ### Processed Dataset
 
-(Add Pandas DataFrame screenshot)
+![Pandas_df](Pandas_df.png)
 
 ---
 
